@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body>
+    <div>
+        <h1>Details</h1>
+    </div>
+    <form action="">
+        <div class="form-containts"><b>Name: <n class="icon">* </n></b><input type="text" class="name" placeholder="Enter Your Name"
+                id="num" required></div>
+        <div class="form-containts"><b><br> Email Id:</b><input type="email" placeholder="Enter Your Email" id="num">
+        </div>
+        <div class="form-containts"><b><br>Phone no.:</b><input type="number" name="" ></div>
+        <div class="form-containts"><b><br>Date of Birth:</b><input type="date" name=""></div>
+        <div class="form-containts"><b><br>Adress:</b><input type="text" name="" placeholder="Address"></div>
+        <div class="form-containts"><b><br>Any Suggetions <br></b><textarea name="" id="" cols="30"
+                rows="10"></textarea></div>
+        <br>
+        <n class="icon">* </n>indicates required to fill
+        <p></p>
+    
+
+    </form>
+    <button type="submit" onclick="submit()" value="Submit"> <b> Submit</b></button>
+    <script>
+        const value1 = document.getElementById("num")
+        const para = document.querySelector("p")
+        const result = document.querySelector("button")
+        result.addEventListener("click", function x() {
+            if (value1.value === "") {
+                alert("Please fill your Name")
+            } else {
+                
+                document.write('<h1 id="header" style="text-align: center; color:green; display:flex; flex-direction:column; justify-content:center; align-items:center;">Thank You for Submission Good Luck for your Future:)<button id="btn">View</button></h1>')
+                const button = document.getElementById("btn")
+                button.addEventListener("click",function(){
+                    document.write(`<h3 style="text-align:center; color:red;">${value1.value}</h3>`)
+                    button.style.display="none"
+                    document.getElementById("header").style.display="none"
+                })
+            }
+           
+        }
+        )
+
+    </script>
+</body>
+
+</html>

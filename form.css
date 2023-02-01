@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+text-align: center;
+}
+h1{
+    padding: 20px;
+}
+
+
+form{
+    gap: 5vw;
+}
+
+.form-containts{
+    padding: 10px;
+}
+.icon{
+    color: red;
+}
